@@ -5,9 +5,9 @@
 <h3><%= link_to 'New Album', new_album_path %></h3>
 
     <% @albums.each do |album| %>
-        <h4><%=  link_to album.name, album_path(album) %></h4>
-        <img src="<%= album.image_address %>"/>
-        <p><%= link_to 'Show', album %> |
+        <h2><%=  link_to album.name, album %><span>(
         <%= link_to 'Edit', edit_album_path(album) %> |
-        <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %>)</span></h2>
+        <img src="<%= album.image_address %>"/>
+
     <% end %>

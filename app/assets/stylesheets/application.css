@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+.title {
+  font-size: 250%;
+}
+
 img {
   height: 300px;
+}
+
+h2 span {
+  font-size: 70%;
 }
