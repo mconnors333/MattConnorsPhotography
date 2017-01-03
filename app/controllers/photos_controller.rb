@@ -24,7 +24,11 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.json
   def create
-    @photo = Photo.new(photo_params)
+    if current_user == nil
+      redirect_to albums_path
+      flash[:alert] = "Login to add a photo"
+    else
+      @photo = Photo.new(photo_params.merge(user: current_user))
 
     respond_to do |format|
       if @photo.save
@@ -33,6 +37,7 @@ class PhotosController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @photo.errors, status: :unprocessable_entity }
+      end
       end
     end
   end
@@ -69,6 +74,6 @@ class PhotosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.fetch(:photo, {})
+      params.fetch(:photo).permit(:user_id, :album_id, :image_address)
     end
 end
