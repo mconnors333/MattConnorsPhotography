@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* FULL PAGE CSS */
+
 .title {
   font-size: 250%;
 }
@@ -24,3 +28,58 @@ img {
 h2 span {
   font-size: 70%;
 }
+
+h2 {
+  font-size: 200%;
+}
+
+.navLinks{
+  width:500px;
+  display: block;
+  float:right;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* HOME PAGE */
+
+
+
+
+/* ABOUT US PAGE */
+
+.photoDiv {
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutMePhoto {
+  border-radius: 50%;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Quicksand', sans-serif;
+  background-color: lightgreen;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* PORTFOLIO PAGE */
+
+
+
+
+
+
+/* CONTACT ME PAGE */

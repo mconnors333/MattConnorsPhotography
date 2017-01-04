@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Matthew Connors Photography</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,6 +13,7 @@
   <body>
     <nav>
         <h1 class="title">Matthew Connors Photography</h1>
+        <h3 class="navLinks"><%= link_to "Home", root_path %> | <%= link_to "About", about_path %> | <%= link_to "Contact", contact_path %> | <%= link_to "My Albums", albums_path %> | <%= link_to "View All My Photos", photos_path %></h3>
         <% if !current_user %>
           <%= link_to "Sign up", new_user_registration_path %>
           <%= link_to "Sign in", new_user_session_path %>
@@ -19,8 +22,10 @@
             <%= current_user.email %>
         <% end %>
 
-        <h3><%= link_to "Home", root_path %> | <%= link_to "About", about_path %> | <%= link_to "Contact", contact_path %> | <%= link_to "My Albums", albums_path %> | <%= link_to "View All My Photos", photos_path %></h3>
-      </nav
-    <%= yield %>
+
+      </nav>
+
+      <%= yield %>
+
   </body>
 </html>
