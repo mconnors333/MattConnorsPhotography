@@ -21,6 +21,7 @@
        <li class="links"><%= link_to "Sign up", new_user_registration_path %></li>
        <li class="links"><%= link_to "Sign in", new_user_session_path %></li>
      <% else %>
+     <li class="links"><%= link_to 'Edit Profile',edit_user_registration_path, class: "red" %></li>
      <li class="links"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
      <li class="links"><%= link_to "View All My Photos", photos_path %></li>
      <li class="links"><%= link_to "My Albums", albums_path %></li>
