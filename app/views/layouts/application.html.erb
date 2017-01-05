@@ -8,24 +8,37 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <nav>
-        <h1 class="title">Matthew Connors Photography</h1>
-        <h3 class="navLinks"><%= link_to "Home", root_path %> | <%= link_to "About", about_path %> | <%= link_to "Contact", contact_path %> | <%= link_to "My Albums", albums_path %> | <%= link_to "View All My Photos", photos_path %></h3>
-        <% if !current_user %>
-          <%= link_to "Sign up", new_user_registration_path %>
-          <%= link_to "Sign in", new_user_session_path %>
-        <% else %>
-          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-            <%= current_user.email %>
-        <% end %>
+
+    <ul>
+      <div class="logo">
+       <li class="links"><%= link_to "Matthew Connors Photography", root_path %></li>
+     </div>
+     <% if !current_user %>
+       <li class="links"><%= link_to "Sign up", new_user_registration_path %></li>
+       <li class="links"><%= link_to "Sign in", new_user_session_path %></li>
+     <% else %>
+     <li class="links"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+     <li class="links"><%= link_to "View All My Photos", photos_path %></li>
+     <li class="links"><%= link_to "My Albums", albums_path %></li>
+         <%= current_user.email %>
+     <% end %>
+       <li class="links"><%= link_to "Contact", contact_path %></li>
+       <li class="links"><%= link_to "Portfolio", portfolio_path %></li>
+       <li class="links"><%= link_to "About", about_path %></li>
+       <li class="links"><%= link_to "Home", root_path %></li>
+    </ul>
+          <br><br>
 
 
-      </nav>
+
+    <div class="notice alert"><%= notice %><%= alert %></div>
 
       <%= yield %>
+
 
   </body>
 </html>

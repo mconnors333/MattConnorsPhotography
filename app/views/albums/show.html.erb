@@ -1,9 +1,11 @@
 <h1><%= @album.name %>(<%= link_to "Edit", edit_album_path(@album) %>
 <%= link_to "Delete", @album, method: :delete, data: { confirm: 'Are you sure?' }%>)</h1>
 <%= link_to "Add New Photo", new_photo_path %></h2> <br>
+<div class="container">
 <% @album.photos.each do |photo| %>
   <div class="photo">
     <h2><%= link_to photo.id, photo_path(photo) %></h2>
     <img src="<%= photo.image_address %>"/>
   </div>
 <% end %>
+</div>

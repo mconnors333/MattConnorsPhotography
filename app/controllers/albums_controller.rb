@@ -24,6 +24,11 @@ class AlbumsController < ApplicationController
   # POST /albums
   # POST /albums.json
   def create
+
+    if current_user == nil
+      redirect_to albums_path
+      flash[:alert] = "Login to add an album"
+    else
     @album = Album.new(album_params)
 
     respond_to do |format|
@@ -33,6 +38,7 @@ class AlbumsController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @album.errors, status: :unprocessable_entity }
+      end
       end
     end
   end

@@ -3,11 +3,13 @@
 <h1>Albums</h1>
 
 <h3><%= link_to 'New Album', new_album_path %></h3>
-
+<div class="container">
     <% @albums.each do |album| %>
+    <div class="albums">
         <h2><%=  link_to album.name, album %><span>(
         <%= link_to 'Edit', edit_album_path(album) %> |
         <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %>)</span></h2>
         <img src="<%= album.image_address %>"/>
-
+      </div>
     <% end %>
+</div>

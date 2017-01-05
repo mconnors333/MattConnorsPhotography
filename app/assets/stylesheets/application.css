@@ -16,13 +16,50 @@
 
 
 /* FULL PAGE CSS */
+.logo {
+  float: left;
+  font-size: 180%;
+}
+.links a {
+  color: white;
+}
 
-.title {
-  font-size: 250%;
+.links a:active {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  float: right;
+  z-index: 2;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
 }
 
 img {
   height: 300px;
+  padding: 5px;
 }
 
 h2 span {
@@ -33,12 +70,6 @@ h2 {
   font-size: 200%;
 }
 
-.navLinks{
-  width:500px;
-  display: block;
-  float:right;
-}
-
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -47,7 +78,19 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
+
+
 /* HOME PAGE */
+.slider {
+  margin: 0 auto;
+}
+
+.sliderImages {
+  height: 650px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
 
 
@@ -64,6 +107,8 @@ p {
   width: 300px;
   display: block;
   margin: 0 auto;
+  border: 1px solid navy;
+  vertical-align: bottom;
 }
 
 .aboutContainer {
@@ -77,9 +122,28 @@ p {
 
 /* PORTFOLIO PAGE */
 
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
+.portfolioPhotos{
+  height: 800px
+}
 
 
 /* CONTACT ME PAGE */
+
+
+
+/* ALBUMS */
+
+.albums {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* PHOTOS */

@@ -25,7 +25,7 @@ class PhotosController < ApplicationController
   # POST /photos.json
   def create
     if current_user == nil
-      redirect_to albums_path
+      redirect_to photos_path
       flash[:alert] = "Login to add a photo"
     else
       @photo = Photo.new(photo_params.merge(user: current_user))
