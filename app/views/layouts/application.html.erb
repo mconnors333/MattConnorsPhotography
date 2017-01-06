@@ -27,15 +27,10 @@
         <%= link_to "About", about_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact", contact_path, class: "nav-link" %>
+        <%= link_to "Portfolio", portfolio_path, class: "nav-link" %>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-        <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item">
+        <%= link_to "Contact", contact_path, class: "nav-link" %>
       </li>
       <% if !current_user %>
         <li class="nav-item"><%= link_to "Sign up", new_user_registration_path, class: "nav-link" %></li>
@@ -50,54 +45,6 @@
     </ul>
   </div>
 </nav>
-<!--
-    <nav class="navbar navbar-light bg-success navbar-fixed-top text-white" id="navbar">
-              <a class="navbar-brand"><%= link_to "Matthew Connors Photography", root_path, class: "logo" %></a>
-              <ul id="navbar" class="nav navbar-nav">
-                <li class="nav-item">
-                  <%= link_to "Home", root_path, class: "nav-link" %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to "About", about_path, class: "nav-link" %>
-                </li>
-
-
-                <li class="nav-item">
-                  <%= link_to "Portfolio", portfolio_path, class: "nav-link" %>
-                </li>
-
-                <!--
-                <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#"><%= link_to "Portfolio", portfolio_path, class: "nav-link" %></a>
-                        <a class="dropdown-item" href="#"><%= link_to "Portfolio", portfolio_path, class: "nav-link" %></a>
-                        <a class="dropdown-item" href="#"><%= link_to "Portfolio", portfolio_path, class: "nav-link" %></a>
-
-
-
-
-
-                <li class="nav-item">
-                  <%= link_to "Contact", contact_path, class: "nav-link" %>
-                </li>
-                <% if !current_user %>
-                  <li class="nav-item"><%= link_to "Sign up", new_user_registration_path, class: "nav-link" %></li>
-                  <li class="nav-item"><%= link_to "Sign in", new_user_session_path, class: "nav-link" %></li>
-                <% else %>
-                <li class="nav-item"><%= link_to 'Edit Profile',edit_user_registration_path, class: "nav-link"%></li>
-                <li class="nav-item"><%= link_to "View All My Photos", photos_path, class: "nav-link" %></li>
-                <li class="nav-item"><%= link_to "My Albums", albums_path, class: "nav-link" %></li>
-                <li class="nav-item"><%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "nav-link" %></li>
-                <% end %>
-            </ul>
-        </nav>
-
-          <br><br>
-
--->
 
     <div class="notice alert"><%= notice %><%= alert %></div>
 

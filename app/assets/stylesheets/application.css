@@ -22,7 +22,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: black !important;
+  color: white !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -127,12 +127,27 @@ background-color: transparent !important;
 /* HOME PAGE */
 
 .sliderImages {
-  height: 650px;
+  height: 660px;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
 
+.carousel-caption {
+  position: relative;
+  top: 50px;
+  z-index: 5;
+}
+
+.carousel-caption h3 {
+  font-size: 50px;
+}
+
+.carousel-caption p{
+  position: relative;
+  font-size: 25px;
+  top: 350px;
+}
 
 /* ABOUT US PAGE */
 
@@ -159,8 +174,21 @@ background-color: transparent !important;
 
 
 .portfolioPhotos{
-  height: 600px;
+  width: 300px;
   border-radius: 10px;
+}
+.top-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.portfolio-center {
+  text-align: center;
+}
+
+.portfolio-center h2 {
+  font-size: 20px;
 }
 
 
