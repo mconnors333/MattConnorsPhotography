@@ -10,5 +10,10 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/portfolio' => 'pages#portfolio'
   get '/contact' => 'pages#contact'
+  get '/weddings' => 'pages#weddings'
+  get '/engagements' => 'pages#engagements'
+  get '/events' => 'pages#events'
+  get '/pets' => 'pages#pets'
+  get '/portraits' => 'pages#portraits'
 
 end

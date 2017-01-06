@@ -5,7 +5,7 @@
 <div class="container">
 
     <% @photos.each do |photo| %>
-    <div>
+    <div class="centerCrud">
     <img src="<%= photo.image_address %>"/>
         <p><%= link_to 'Show', photo %> |
         <%= link_to 'Edit', edit_photo_path(photo) %> |
