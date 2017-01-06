@@ -11,8 +11,6 @@ module MattConnorsPhotography
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    t('sessions.signed_in', name: current_user.first_name)
-    t('sessions.signed_out', name: current_user.first_name)
 
 
   end
