@@ -73,7 +73,7 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
-/*.socialIcons {
+.socialIcons {
 height: 50px;
 width: 50px;
 margin: 10px;
@@ -104,7 +104,7 @@ background-color: transparent !important;
     padding-top: 125px;
     margin-top: 50px;
     padding-bottom: 125px;
-}*/
+}
 
 .centerCrud {
   text-align: center;
@@ -174,8 +174,9 @@ background-color: transparent !important;
 
 
 .portfolioPhotos{
-  width: 300px;
+  width: 400px;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
 }
 .top-container {
   display: flex;

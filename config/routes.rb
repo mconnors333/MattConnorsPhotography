@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   get '/events' => 'pages#events'
   get '/pets' => 'pages#pets'
   get '/portraits' => 'pages#portraits'
-
+  get '/product' => 'pages#product'
+  get '/other' => 'pages#other'
 end

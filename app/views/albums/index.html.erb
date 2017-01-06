@@ -1,8 +1,12 @@
 <p id="notice"><%= notice %></p>
-
+<div class="container">
 <h1>Albums</h1>
+</div>
+<div class="container">
+<h3><%= link_to '(New Album)', new_album_path %></h3>
+</div>
 
-<h3><%= link_to 'New Album', new_album_path %></h3>
+
 <div class="container">
     <% @albums.each do |album| %>
     <div class="albums">
