@@ -41,14 +41,12 @@
       <li class="nav-item"><%= link_to 'Edit Profile',edit_user_registration_path, class: "nav-link"%></li>
       <li class="nav-item"><%= link_to "View All My Photos", photos_path, class: "nav-link" %></li>
       <li class="nav-item"><%= link_to "My Albums", albums_path, class: "nav-link" %></li>
-      <li class="nav-item"><%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "nav-link" %></li>
+      <li class="nav-item"><span><%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "nav-link" %></li>
       <% end %>
       </li>
     </ul>
   </div>
 </nav>
-
-    <div class="notice alert"><%= notice %><%= alert %></div>
 
 
 
@@ -61,14 +59,18 @@
       <div class="bg-success" id="footer">
 
             <h2 id="footer-text" class="display-5">Connect with me on Social Media</h2>
-      
+
+            <%= link_to image_tag("https://www.viewbug.com/media/images/layout/profile/slideshow_empty280x280.jpg"), "https://www.viewbug.com/member/Matt__Connors#/Matt__Connors/gallery?sort=mostview", id: "viewbug", class: "socialIcons", :target => "_blank"  %>
+
+            <%= link_to image_tag("https://s4.postimg.org/i0bihvmi5/1477000175_instagram_circle.png"), "https://www.instagram.com/matt_connors_photo/", class: "socialIcons", :target => "_blank"  %>
+
             <%= link_to image_tag("https://s4.postimg.org/8r9c7rdm5/1477000196_linkedin_circle.png"), "https://www.linkedin.com/in/matthew-connors", class: "socialIcons", :target => "_blank"  %>
 
             <%= link_to image_tag("https://s4.postimg.org/fx13a7mp9/1477000165_twitter_circle.png"), "https://twitter.com/Matt__Connors", class: "socialIcons", :target => "_blank"  %>
 
-            <%= link_to image_tag("https://s4.postimg.org/i0bihvmi5/1477000175_instagram_circle.png"), "https://www.instagram.com/matt_connors_photo/", class: "socialIcons", :target => "_blank"  %>
 
-            <%= link_to image_tag("https://www.viewbug.com/media/images/layout/profile/slideshow_empty280x280.jpg"), "https://www.viewbug.com/member/Matt__Connors#/Matt__Connors/gallery?sort=mostview", id: "viewbug", class: "socialIcons", :target => "_blank"  %>
+
+
         </div>
 
 

@@ -1,6 +1,21 @@
-<h1><%= @album.name %>(<%= link_to "Edit", edit_album_path(@album) %>
-<%= link_to "Delete", @album, method: :delete, data: { confirm: 'Are you sure?' }%>)</h1>
+<div class="buffer">
+
+</div>
+<div class="container">
+  <div class="container">
+<h1><%= @album.name %></h1>
+</div>
+<div class="container">
+<p>(<%= link_to "Edit", edit_album_path(@album) %>   |
+<%= link_to "Delete", @album, method: :delete, data: { confirm: 'Are you sure?' }%>)</p>
+</div>
+
+<div class="container">
 <%= link_to "Add New Photo", new_photo_path %></h2> <br>
+</div>
+
+
+
 <div class="container">
 <% @album.photos.each do |photo| %>
   <div class="photo">
@@ -8,4 +23,5 @@
     <img src="<%= photo.image_address %>"/>
   </div>
 <% end %>
+</div>
 </div>
