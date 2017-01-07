@@ -61,11 +61,14 @@
       <div class="bg-success" id="footer">
 
             <h2 id="footer-text" class="display-5">Connect with me on Social Media</h2>
-            <a href="https://github.com/mconnors333" target="_blank"><img src="https://s11.postimg.org/qaj20q48z/1477000357_github.png" class="socialIcons"></a>
-            <a href="https://www.linkedin.com/in/matthew-connors" target="_blank"><img src="https://s4.postimg.org/8r9c7rdm5/1477000196_linkedin_circle.png" class="socialIcons"></a>
-            <a href="https://twitter.com/Matt__Connors" target="_blank"><img src="https://s4.postimg.org/fx13a7mp9/1477000165_twitter_circle.png" class="socialIcons"></a>
-            <a href="https://www.instagram.com/matt_connors_photo/" target="_blank"><img src="https://s4.postimg.org/i0bihvmi5/1477000175_instagram_circle.png" class="socialIcons"></a>
-            <a href="https://www.viewbug.com/member/Matt__Connors#/Matt__Connors/gallery?sort=mostview" target="_blank"><img src="https://www.viewbug.com/media/images/layout/profile/slideshow_empty280x280.jpg" class="socialIcons" id="viewbug"></a>
+      
+            <%= link_to image_tag("https://s4.postimg.org/8r9c7rdm5/1477000196_linkedin_circle.png"), "https://www.linkedin.com/in/matthew-connors", class: "socialIcons", :target => "_blank"  %>
+
+            <%= link_to image_tag("https://s4.postimg.org/fx13a7mp9/1477000165_twitter_circle.png"), "https://twitter.com/Matt__Connors", class: "socialIcons", :target => "_blank"  %>
+
+            <%= link_to image_tag("https://s4.postimg.org/i0bihvmi5/1477000175_instagram_circle.png"), "https://www.instagram.com/matt_connors_photo/", class: "socialIcons", :target => "_blank"  %>
+
+            <%= link_to image_tag("https://www.viewbug.com/media/images/layout/profile/slideshow_empty280x280.jpg"), "https://www.viewbug.com/member/Matt__Connors#/Matt__Connors/gallery?sort=mostview", id: "viewbug", class: "socialIcons", :target => "_blank"  %>
         </div>
 
 

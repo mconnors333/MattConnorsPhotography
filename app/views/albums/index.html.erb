@@ -10,9 +10,9 @@
 <div class="container">
     <% @albums.each do |album| %>
     <div class="albums">
-        <h2><%=  link_to album.name, album %><span>(
-        <%= link_to 'Edit', edit_album_path(album) %> |
-        <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %>)</span></h2>
+        <h2><%=  link_to album.name, album, class: "album-links" %><br><span>(
+        <%= link_to 'Edit', edit_album_path(album), class: "album-links" %> |
+        <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?', class: "edit_destroy", class: "album-links" } %>)</span></h2>
         <img src="<%= album.image_address %>"/>
       </div>
     <% end %>
