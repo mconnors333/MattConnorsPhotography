@@ -1,24 +1,18 @@
-# README
+# Matthew Connors Photography
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Matthew Connors Photography is a full stack ruby on rails application that doubles as my Photography portfolio.  A user can visit my site and look over my photos, contact me, or sign up as a client.  A client can view their photos from their photo event.
 
-Things you may want to cover:
 
-* Ruby version
+## Things I still need to accomplish:
 
-* System dependencies
+* Contact Me functional
+* add packages page
+* Clients can only see their own photos
+* Create an Admin account for me
+* Add photos to portfolio pages
+* Image uploader to load many images at once
+* Add favoriting/order system for print/photo selections
+* Create mailing list
+* Advertise
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Installation Instructions
