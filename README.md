@@ -14,6 +14,6 @@ Matthew Connors Photography is a full stack ruby on rails application that doubl
 * Create mailing list
 * Advertise
 
-## Visit the Deployed link
+## Visit the Deployed Project
 
-* https://matthew-connors-photography.herokuapp.com/
+https://matthew-connors-photography.herokuapp.com/
