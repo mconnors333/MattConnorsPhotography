@@ -6,11 +6,10 @@ Matthew Connors Photography is a full stack ruby on rails application that doubl
 ## Things I still need to accomplish:
 
 * Contact Me functional
-* add packages page
-* Clients can only see their own photos
+* Add packages page
 * Create an Admin account for me
 * Add photos to portfolio pages
-* Image uploader to load many images at once
+* Image uploader(paperclip or carrierwave) to load many images at once
 * Add favoriting/order system for print/photo selections
 * Create mailing list
 * Advertise
