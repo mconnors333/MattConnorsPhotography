@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get '/portraits' => 'pages#portraits'
   get '/product' => 'pages#product'
   get '/other' => 'pages#other'
+  get '/reviews' => 'pages#reviews'
 end
